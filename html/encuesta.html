@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <title>Centro Veterinario Gómez</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div><img logo src="../images/logo.png" alt=""></div>
+        </div>
+    </header>
+    <nav class="navegacion">
+      <a href="../index.html" target="_self">
+        <div>
+        <p class="boton">Inicio</p>
+        </div>
+    </a>
+    <a href="./encuesta.html" target="_self">
+        <div>
+            <p class="boton">Encuesta</p>
+        </div>
+    </a>
+    <a href="./imagenes.html" target="_self">
+      <div>
+          <p class="boton">Imágenes</p>
+      </div>
+    </a>
+    <a href="./sobrenosotros.html" target="_self">
+      <div>
+          <p class="boton">Sobre nosotros</p>
+      </div>
+    </a>
+    <a href="./ubicacion.html" target="_self">
+      <div>
+          <p class="boton">Nuestra ubicacion</p>
+      </div>
+    </a>
+    </nav>
+    
+    </div>
+
+    <h1>Encuesta</h1>
+    <form action="contacto.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Introduce un email válido">
+        <label for="mensaje">Teléfono</label>
+        <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+              
+            </div>
+          </div>
+        <div class="control-group">
+            <label class="control-label">Selecciona tu tipo o tipos de mascota</label>
+            <div class="controls">
+              <label class="checkbox inline">
+                <input id="opcion1" type="checkbox" value="option1" name="opcion">
+                Perro
+              </label>
+              <label class="checkbox inline">
+                <input id="opcion2" type="checkbox" value="option2" name="opcion">
+                Gato
+                <input id="opcion3" type="checkbox" value="option2" name="opcion">
+                Otro
+              </label>
+            </div>
+          </div>
+        <label for="mensaje">¿Cómo oiste hablar de nosotros?</label>
+        <textarea name="mensaje" id="mensaje" placeholder="¿Cómo oiste hablar de nosotros?" required></textarea>     
+        <label for="preguntauno">¿Nos has visitado alguna vez?</label>
+        <label class="radio">
+          <input type="radio" value="1" name="preguntauno" id="preguntauno">Sí
+          <br>
+          <input type="radio" value="2" name="preguntauno" id="preguntauno">No
+        </label>
+
+        <input type="submit" value="Enviar">
+        
+      
+      </form>
+
+    
+</html>

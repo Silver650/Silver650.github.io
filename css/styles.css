@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=NotoSans |	Noto Sans JP | Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville&family=Secular+One&display=swap');
 
 * {
   margin: 0;
@@ -15,13 +15,11 @@ header {
 h1 {
   margin-left: 20px;
   margin-top: 10px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Secular One', sans-serif;
 }
 
 p {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 header>p {
@@ -74,7 +72,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 210px;
+    height: 260px;
+	
 
   }
 
@@ -92,7 +91,9 @@ body {
 
   .boton, .boton:hover {
     display: inline-block;
-    
+
+
+	 
   }
 }
 
@@ -300,12 +301,11 @@ textarea {
 
 
 label {
-  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
 }
 
 .textoinicio {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   vertical-align: baseline;
   margin-top: 20px;
   margin-left: 50px;
@@ -327,3 +327,67 @@ label {
   margin-bottom: 1%;
   width: 30%;
 }
+
+
+.imagenservicios {
+	position: relative;
+	width: 450px;
+  float: left;
+  margin-left: 6%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+
+.imagen__img {
+	display: block;
+	height: 300px;
+  width: 450px;
+}
+
+.imagen__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Libre Baskerville', serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.imagen__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+
+.imagen__overlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.imagen__overlay:hover {
+	opacity: 1;
+}
+
+.imagen__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.imagen__titulo {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.imagen__descripcion {
+	font-size: 1.25em;
+	margin-top: 0.25em;
+ text-align: center;
+}
+
